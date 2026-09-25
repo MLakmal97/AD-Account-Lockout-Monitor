@@ -849,7 +849,7 @@ function Process-DomainController {
         if ($Events.Count -eq 0) {
 
             Write-MonitorLog `
-                "No Event ID $EventId records found on $DomainController." `
+                "No new Event ID $EventId events found on $DomainController. Last Record ID: $LastRecordId." `
                 "INFO"
 
             return
