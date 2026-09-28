@@ -1,0 +1,16 @@
+﻿{
+    "StateFile": "C:\\ProgramData\\ADLockoutMonitor\\state.json",
+    "LogDirectory": "C:\\ProgramData\\ADLockoutMonitor\\Logs",
+    "EventId": 4740,
+    "CheckIntervalSeconds": 30,
+    "RediscoverDCsEveryMinutes": 30,
+    "AutoDiscoverDomainControllers": false,
+    "DomainControllers": [
+        "DC01.example.com",
+        "DC02.example.com"
+    ],
+    "Notification": {
+        "Enabled": true,
+        "WindowsEventLog": true
+    }
+}

@@ -676,11 +676,11 @@ function Get-LockoutEventData {
         # --------------------------------------------------------
         # Domain
         #
-        # SubjectDomainName normally contains MCBLK in your
+        # SubjectDomainName normally contains Domain in your
         # environment.
         # --------------------------------------------------------
 
-        $Domain = "MCBLK"
+        $Domain = "DC01.example.com"
 
         if ($Data.ContainsKey("SubjectDomainName")) {
 
@@ -934,7 +934,7 @@ function Process-DomainController {
                 }
 
                 if ([string]::IsNullOrWhiteSpace($Domain)) {
-                    $Domain = "MCBLK"
+                    $Domain = "DC01.example.com"
                 }
 
                 if ([string]::IsNullOrWhiteSpace($CallerComputer)) {
